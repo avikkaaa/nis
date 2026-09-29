@@ -1,0 +1,1 @@
+import{Router}from'express';import{getStats,listRequests,submitText}from'../controllers/requestController.js';const router=Router();router.post('/requests/text',submitText);router.get('/requests',listRequests);router.get('/stats',getStats);export default router;

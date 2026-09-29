@@ -1,0 +1,1 @@
+import'dotenv/config';import path from'node:path';export const config={port:Number(process.env.PORT||5000),dataStore:process.env.DATA_STORE||'local',sqlitePath:process.env.SQLITE_PATH||path.resolve(process.cwd(),'data/nischay.sqlite'),nodeEnv:process.env.NODE_ENV||'development'};

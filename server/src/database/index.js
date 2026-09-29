@@ -1,0 +1,1 @@
+import{SQLiteDataStore}from'./sqlite.js';import{config}from'../config.js';import{logger}from'../utils/logger.js';let store;export function getDataStore(){if(store)return store;if(config.dataStore!=='local')logger.warn('Only the local adapter is available in Phase 1; using SQLite.',{requested:config.dataStore});store=new SQLiteDataStore();return store}

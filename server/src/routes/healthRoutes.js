@@ -1,0 +1,1 @@
+import{Router}from'express';import{config}from'../config.js';const router=Router();router.get('/health',(_req,res)=>res.json({ok:true,service:'nischay-ai-api',dataStore:config.dataStore,timestamp:new Date().toISOString()}));export default router;

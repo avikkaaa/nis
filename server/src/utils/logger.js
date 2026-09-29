@@ -1,0 +1,1 @@
+function write(level,message,meta={}){const line=JSON.stringify({time:new Date().toISOString(),level,message,...meta});if(level==='error')console.error(line);else if(level==='warn')console.warn(line);else console.log(line)}export const logger={info:(m,x)=>write('info',m,x),warn:(m,x)=>write('warn',m,x),error:(m,x)=>write('error',m,x)};
