@@ -1,0 +1,1 @@
+import{Router}from'express';import{priorities}from'../controllers/analyticsController.js';const router=Router();router.get('/priorities',priorities);export default router;
