@@ -538,3 +538,8 @@ Before a real government or NGO deployment:
 - define data retention and deletion rules
 - evaluate language-model quality across regions and dialects
 - keep human review in any public-investment or policy decision process
+
+
+---
+
+Repository synced to `main` on 29 September 2026 after the full Nischay AI build.
