@@ -1,0 +1,1 @@
+import{Router}from'express';import{policyBrief,recommendations}from'../controllers/recommendationController.js';const router=Router();router.post('/recommendations',recommendations);router.post('/policy-brief',policyBrief);export default router;
