@@ -1,0 +1,1 @@
+import{Router}from'express';import{telegramWebhook}from'../controllers/telegramController.js';const router=Router();router.post('/telegram/webhook',telegramWebhook);export default router;
