@@ -1,1 +1,1 @@
-import{Router}from'express';import{priorities}from'../controllers/analyticsController.js';const router=Router();router.get('/priorities',priorities);export default router;
+import{Router}from'express';import{districtIntelligence,priorities}from'../controllers/analyticsController.js';const router=Router();router.get('/priorities',priorities);router.get('/districts/:district',districtIntelligence);export default router;
