@@ -1,0 +1,24 @@
+name: Nischay AI CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install server dependencies
+        run: npm install --prefix server
+      - name: Run priority engine tests
+        run: npm test --prefix server
+      - name: Syntax check API entry
+        run: npm run check --prefix server
+      - name: Install client dependencies
+        run: npm install --prefix client
+      - name: Build React application
+        run: npm run build --prefix client

@@ -1,9 +1,12 @@
 node_modules/
 dist/
 .env
+*.env.local
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
 coverage/
 .DS_Store
 server/uploads/
+*service-account*.json
+*credentials*.json
